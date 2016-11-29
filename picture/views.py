@@ -26,7 +26,7 @@ my_media_root = settings.MEDIA_ROOT
 def index(request):
     # ...
 
-    filename_midi = os.path.join(my_media_root, '0006.mid')
+    filename_midi = os.path.join(my_media_root, '0009.mid')
     #raise Exception(os.path.join(my_media_root, '0006.mid'))
     with open(filename_midi, 'rb') as m:
         midi_content = m.read()
@@ -64,6 +64,6 @@ def getRandomFile(path):
     """
     files = os.listdir(my_media_root)
 
-    file_index = random.randrange(7, len(files))
+    file_index = random.randrange(7, 17)
 
     return files[file_index]
