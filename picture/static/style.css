@@ -1,0 +1,23 @@
+body {
+    background-color: ivory;
+}
+
+img {
+    height: 500px;
+    width: 500px;
+}
+
+.container {
+    float: right;
+}
+
+#audio-container {
+    float: left;
+    position: absolute;
+    top: 10px;
+}
+
+audio {
+    width: 200px;
+
+}
